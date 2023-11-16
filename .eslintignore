@@ -1,0 +1,4 @@
+node_modules
+seeders
+helpers/mailer
+models/index.js
