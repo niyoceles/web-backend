@@ -1,10 +1,10 @@
 const toursMigration = {
   up: (queryInterface, Sequelize) => queryInterface.createTable('tours', {
     id: {
-      type: Sequelize.INTEGER,
+      type: Sequelize.UUID,
+      defaultValue: Sequelize.UUIDV4,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true,
     },
     title: {
       type: Sequelize.STRING,

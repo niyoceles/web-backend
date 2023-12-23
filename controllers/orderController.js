@@ -30,6 +30,8 @@ class orderController {
       location,
     } = req.body;
 
+    console.log('daaaaa', req.body);
+
     try {
       const userClient = await userService.createClient(
         names,
@@ -138,6 +140,7 @@ class orderController {
         message: 'Get order item successful',
       });
     } catch (error) {
+      console.log(error);
       return res.status(500).json({
         error: 'Failed to get ordered item',
       });

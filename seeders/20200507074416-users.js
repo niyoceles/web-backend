@@ -35,10 +35,10 @@ export const up = (queryInterface, Sequelize) =>
 			},
 			{
 				id: 'db7b7393-e138-4727-bd44-1ef307244de9',
-				email: 'niyoceles3@gmail.com',
-                firstName: 'Celestin3',
-				lastName: 'Niyonsaba3',
-				phoneNumber: '+250783067012',
+				email: 'godiscoverafrica20@gmail.com',
+                firstName: 'GODISCOVER',
+				lastName: 'AFRICA',
+				phoneNumber: '+250791349744',
 				// password "Abcd123@dom"
 				password:
 					'$2a$10$S8OdwP6ck6aSguzg/XAhOe.YSqAYigGS8An0BMiCu2J/vFwgoRrK.',
