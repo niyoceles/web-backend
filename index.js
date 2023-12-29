@@ -12,7 +12,14 @@ dotenv.config();
 // express app
 const app = express();
 
-app.use(cors());
+// Set up CORS options to accept requests from any origin with any headers and methods
+const corsOptions = {
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: '*',
+};
+
+app.use(cors(corsOptions));
 
 // body parse configuration
 app.use(
