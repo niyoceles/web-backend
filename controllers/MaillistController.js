@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-tabs */
 import dotenv from 'dotenv';
 import nodemailer from 'nodemailer';
@@ -150,13 +151,13 @@ export default class MaillistsController {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'niyoceles3@gmail.com',
+        user: process.env.EMAIL_RECEIVER,
         pass: process.env.SENDER_PWD // https://support.google.com/accounts/answer/185833?visit_id=638360865610150973-3194767862&p=InvalidSecondFactor&rd=1
       }
     });
 
     const mailOptions = {
-      from: 'niyoceles3@gmail.com',
+      from: process.env.EMAIL_RECEIVER,
       to: sendTo,
       subject,
       html,
@@ -184,13 +185,13 @@ export default class MaillistsController {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'niyoceles3@gmail.com',
+        user: process.env.EMAIL_RECEIVER,
         pass: process.env.SENDER_PWD // https://support.google.com/accounts/answer/185833?visit_id=638360865610150973-3194767862&p=InvalidSecondFactor&rd=1
       }
     });
 
     const mailOptions = {
-      from: 'niyoceles3@gmail.com',
+      from: process.env.EMAIL_RECEIVER,
       to: sendTo,
       subject,
       html: `<div style="background-color: white; border-radius: 10px;">
