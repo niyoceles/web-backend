@@ -42,7 +42,7 @@
         "@babel/register": "^7.9.0",
         "@hapi/joi": "^15.0.3",
         "algoliasearch": "^3.33.0",
-        "axios": "^1.2.6",
+        "axios": "^1.6.5",
         "babel-node": "0.0.1-security",
         "bcryptjs": "^2.4.3",
         "bluebird": "^3.7.2",
