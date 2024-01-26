@@ -21,7 +21,7 @@ export default class ContactController {
 	 */
   static async contactWithEmail(req, res) {
     const {
-      names, email, subject, message
+      names, email, subject, phone, message
     } = req.body;
     if (!names) {
       return res.status(400).json({
@@ -44,7 +44,8 @@ export default class ContactController {
       });
     }
     try {
-      await contactForm(names, email, subject, message);
+      await contactForm(names, email, subject, phone, message);
+      await contactForm(names, 'godiscoverafrica20@gmail.com', subject, phone, message);
       return res.status(HTTP_CREATED).json({
         message: 'Thank you for contacting GODISCOVERAFRICA. \n We will back to you soon!',
       });

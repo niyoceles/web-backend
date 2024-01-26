@@ -2,7 +2,7 @@ import 'dotenv/config';
 import nodemailer from 'nodemailer';
 const receiverEmail = process.env.EMAIL_RECEIVER;
 
-export const contactForm = async (names, email, subject, message) => {
+export const contactForm = async (names, email, subject,phone, message) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -14,7 +14,7 @@ export const contactForm = async (names, email, subject, message) => {
   const mailOptions = {
     from: process.env.SENDER_EMAIL,
     to: process.env.SENDER_EMAIL,
-    subject:`#Contact us ${subject}`,
+    subject:`${subject}`,
     html: `<div style="background-color: white; border-radius: 10px;">
     <p style="font-size: 18px; padding: 30px; ">
         ${message}
@@ -22,6 +22,9 @@ export const contactForm = async (names, email, subject, message) => {
         Best regards,
         <br>
         ${names}
+        <br>
+        <br>
+        ${phone}
         <br>
         <a
             href='#'
