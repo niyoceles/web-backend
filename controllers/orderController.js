@@ -28,6 +28,7 @@ class orderController {
       phoneNumber,
       address,
       location,
+      appUrl
     } = req.body;
 
     console.log('daaaaa', req.body);
@@ -54,7 +55,7 @@ class orderController {
         amount,
       });
 
-      await createOrderEmail(names, email, order.id);
+      await createOrderEmail(names, email, order.id, appUrl);
 
       return res.status(201).json({
         order,
@@ -271,7 +272,7 @@ class orderController {
         req.body.status,
       );
       // const confirmedOrder = await Promise.all(orderedItem);
-      await payOrderEmail(req.body.names, req.body.email, bookingId);
+      await payOrderEmail(req.body.names, req.body.email, bookingId, req.body.appUrl);
 
       return res.status(200).json({
         orderedItem,

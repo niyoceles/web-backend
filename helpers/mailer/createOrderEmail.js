@@ -1,9 +1,8 @@
 import 'dotenv/config';
 import nodemailer from 'nodemailer';
 const receiverEmail = process.env.EMAIL_RECEIVER;
-const appUrl = process.env.FRONT_END_URL;
 
-export const createOrderEmail = async (names, email, bookId) => {
+export const createOrderEmail = async (names, email, bookId, appUrl) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -41,11 +40,11 @@ export const createOrderEmail = async (names, email, bookId) => {
         <br>
         Website:
         <a
-            href='https://godiscoverafrica.rw'
+            href='${appUrl}'
             style="color:#18a0fb; text-decoration:none"
             target='_blank'
         > 
-         GODISCOVER AFRICA
+        ${appUrl}
         </a>
     </p>
     </div>
