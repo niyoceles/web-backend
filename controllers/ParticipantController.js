@@ -26,7 +26,7 @@ export default class ParticipantController {
   static async createParticipant(req, res) {
     try {
       const {
-        eventId,
+        eventName,
         title,
         familyName,
         firstName,
@@ -51,7 +51,7 @@ export default class ParticipantController {
       }
 
       const participant = await Participant.create({
-        eventId,
+        eventName,
         title,
         familyName,
         firstName,
@@ -92,7 +92,7 @@ export default class ParticipantController {
     try {
       const participants = await Participant.findAll({
         where: {
-          eventId: id,
+          id
         },
       });
       return res.status(200).json(participants);

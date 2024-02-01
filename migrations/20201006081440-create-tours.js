@@ -39,7 +39,31 @@ const toursMigration = {
       allowNull: false,
       defaultValue: 'tours'
     },
-    price: {
+    price1: {
+      type: Sequelize.INTEGER,
+      allowNull: false,
+      required: true,
+      defaultValue: 0
+    },
+    price2: {
+      type: Sequelize.INTEGER,
+      allowNull: false,
+      required: true,
+      defaultValue: 0
+    },
+    price3: {
+      type: Sequelize.INTEGER,
+      allowNull: false,
+      required: true,
+      defaultValue: 0
+    },
+    price4: {
+      type: Sequelize.INTEGER,
+      allowNull: false,
+      required: true,
+      defaultValue: 0
+    },
+    price5: {
       type: Sequelize.INTEGER,
       allowNull: false,
       required: true,

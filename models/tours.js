@@ -43,7 +43,31 @@ export default (sequelize, DataTypes) => {
         allowNull: false,
         defaultValue: 'tours'
       },
-      price: {
+      price1: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        required: true,
+        defaultValue: 0
+      },
+      price2: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        required: true,
+        defaultValue: 0
+      },
+      price3: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        required: true,
+        defaultValue: 0
+      },
+      price4: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        required: true,
+        defaultValue: 0
+      },
+      price5: {
         type: DataTypes.INTEGER,
         allowNull: false,
         required: true,
