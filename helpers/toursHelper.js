@@ -2,16 +2,16 @@
 /* eslint-disable no-tabs */
 import model from '../models';
 import {
-  HTTP_NOT_FOUND,
+  HTTP_NOT_FOUND
 } from '../constants/httpStatusCodes';
 import {
-  NOT_FOUND_NEWS,
+  NOT_FOUND_NEWS
 } from '../constants/general';
 
 const dotenv = require('dotenv');
 
 const {
-  Tours, Read,
+  Tours, Read
 } = model;
 
 dotenv.config();
@@ -21,13 +21,26 @@ dotenv.config();
  */
 class ToursHelper {
   /**
-	 *
-	 * @param {Object} body
-	 * @returns {Object} returns Tours created
-	 */
+   *
+   * @param {Object} body
+   * @returns {Object} returns Tours created
+   */
   static async createTours(body, authorId) {
     const {
-      title, toursBody, image, location, type, price, departureTime, includes, excludes, tips,
+      title,
+      toursBody,
+      image,
+      location,
+      type,
+      price1,
+      price2,
+      price3,
+      price4,
+      price5,
+      departureTime,
+      includes,
+      excludes,
+      tips,
       itenerary,
     } = body;
 
@@ -40,12 +53,16 @@ class ToursHelper {
       image,
       location,
       type,
-      price,
+      price1,
+      price2,
+      price3,
+      price4,
+      price5,
       departureTime,
       includes,
       excludes,
       tips,
-      itenerary
+      itenerary,
     };
 
     const addedTours = await Tours.create(tours);
@@ -53,10 +70,10 @@ class ToursHelper {
   }
 
   /**
-	 *
-	 * @param {Object} body
-	 * @returns {Object} returns all my Tours
-	 */
+   *
+   * @param {Object} body
+   * @returns {Object} returns all my Tours
+   */
   static async findMyTours(authorId) {
     const myTours = await Tours.findAll({
       where: {
@@ -67,10 +84,10 @@ class ToursHelper {
   }
 
   /**
-	 *
-	 * @param {Object} body
-	 * @returns {Object} returns published Tours
-	 */
+   *
+   * @param {Object} body
+   * @returns {Object} returns published Tours
+   */
   static async publishTours(slug, status) {
     const published = await Tours.update(
       {
@@ -80,7 +97,7 @@ class ToursHelper {
         where: {
           slug,
         },
-      }
+      },
     );
     return published;
   }
@@ -104,7 +121,7 @@ class ToursHelper {
             newsSlug,
           },
           returning: true,
-        }
+        },
       );
       return viewed;
     }
@@ -112,10 +129,10 @@ class ToursHelper {
   }
 
   /**
-	 *
-	 * @param {Object} body
-	 * @returns {Object} returns destroy Tours
-	 */
+   *
+   * @param {Object} body
+   * @returns {Object} returns destroy Tours
+   */
   static async deleteTours(slug) {
     const deleted = await Tours.destroy({
       where: {
@@ -129,7 +146,7 @@ class ToursHelper {
     if (array === null || array === undefined || array[0] !== 1) {
       return res.status(HTTP_NOT_FOUND).json({
         error: NOT_FOUND_NEWS,
-        array
+        array,
       });
     }
   }
