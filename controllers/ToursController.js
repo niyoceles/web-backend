@@ -221,7 +221,13 @@ export default class ToursController {
   static async update(req, res) {
     try {
       const {
-        title, toursBody, price, authorId, image
+        title,
+        toursBody,
+        price1,
+        price2,
+        price3,
+        price4,
+        price5, authorId, image
       } = req.body;
 
       const findTours = await Tours.findOne({
@@ -239,7 +245,11 @@ export default class ToursController {
       await Tours.update(
         {
           title,
-          price,
+          price1,
+          price2,
+          price3,
+          price4,
+          price5,
           toursBody,
           authorId,
           image,
