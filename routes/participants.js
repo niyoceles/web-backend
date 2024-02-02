@@ -5,7 +5,7 @@ import ParticipantController from '../controllers/ParticipantController';
 const router = express.Router();
 
 router.post('/create', ParticipantController.createParticipant);
-router.get('/all/:id', ParticipantController.getAllParticipants);
+router.get('/all', ParticipantController.getAllParticipants);
 router.get('/:id', ParticipantController.getParticipantById);
 
 export default router;

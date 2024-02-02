@@ -72,6 +72,7 @@ export default class ParticipantController {
         participant,
       });
     } catch (error) {
+      console.log(error);
       return res.status(HTTP_SERVER_ERROR).json({
         error: SERVER_NOT_RESPONDING,
       });
@@ -86,15 +87,8 @@ export default class ParticipantController {
    */
 
   static async getAllParticipants(req, res) {
-    const {
-      id
-    } = req.params;
     try {
-      const participants = await Participant.findAll({
-        where: {
-          id
-        },
-      });
+      const participants = await Participant.findAll();
       return res.status(200).json(participants);
     } catch (error) {
       console.error(error);
