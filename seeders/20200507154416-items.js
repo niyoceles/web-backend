@@ -5,7 +5,7 @@ export const up = (queryInterface, Sequelize) =>
 			{
 				id: 'db7b7393-e188-4727-bd77-1ef307244de9',
 				itemName: 'Car 4x4 Nice running',
-				itemImage: 'https://res.cloudinary.com/dfsai53mw/image/upload/v1701284532/avensis_fzi2ad.jpg',
+				itemImage: 'https://res.cloudinary.com/dfsai53mw1/image/upload/v1701284532/avensis_fzi2ad.jpg',
 				itemImage2: '',
 				category: 'selfdriving',
 				itemOwnerId: 'db7b7393-e138-4727-bd22-1ef307244de9',
@@ -18,7 +18,7 @@ export const up = (queryInterface, Sequelize) =>
 			{
 				id: 'db7b7393-e138-4727-bd44-1ef307244de9',
 				itemName: 'Car 42.5 | Fast speed',
-				itemImage: 'https://res.cloudinary.com/dfsai53mw/image/upload/v1701284531/rav_xgcsr2.jpg',
+				itemImage: 'https://res.cloudinary.com/dfsai53mw1/image/upload/v1701284531/rav_xgcsr2.jpg',
 				itemImage2: '',
 				category: 'selfdriving',
 				itemOwnerId: 'db7b7393-e138-4727-bd22-1ef307244de9',
@@ -31,7 +31,7 @@ export const up = (queryInterface, Sequelize) =>
 			{
 				id: 'db7b7393-e138-4727-bd66-1ef307244de9',
 				itemName: 'Car 4wd xp | Smooth running',
-				itemImage: 'https://res.cloudinary.com/dfsai53mw/image/upload/v1701284531/rav-4_wv9qk7.jpg',
+				itemImage: 'https://res.cloudinary.com/dfsai53mw1/image/upload/v1701284531/rav-4_wv9qk7.jpg',
 				itemImage2: '',
 				category: 'selfdriving',
 				itemOwnerId: 'db7b7393-e138-4727-bd22-1ef307244de9',
@@ -44,7 +44,7 @@ export const up = (queryInterface, Sequelize) =>
 			{
 				id: 'db7b7393-e138-4727-bd88-1ef307244de9',
 				itemName: 'Electrical car with driver',
-				itemImage: 'https://res.cloudinary.com/dfsai53mw/image/upload/v1701284847/rav-new_twu4h5.avif',
+				itemImage: 'https://res.cloudinary.com/dfsai53mw1/image/upload/v1701284847/rav-new_twu4h5.avif',
 				itemImage2: '',
 				category: 'carhiredriver',
 				itemOwnerId: 'db7b7393-e138-4727-bd22-1ef307244de9',
@@ -57,7 +57,7 @@ export const up = (queryInterface, Sequelize) =>
 			{
 				id: 'db7b7393-e140-4727-bd22-1ef307244de9',
 				itemName: 'Hire car with driver nice one',
-				itemImage: 'https://res.cloudinary.com/dfsai53mw/image/upload/v1701285587/13444_ymwz9s.avif',
+				itemImage: 'https://res.cloudinary.com/dfsai53mw1/image/upload/v1701285587/13444_ymwz9s.avif',
 				itemImage2: '',
 				category: 'carhiredriver',
 				itemOwnerId: 'db7b7393-e138-4727-bd22-1ef307244de9',
@@ -70,7 +70,7 @@ export const up = (queryInterface, Sequelize) =>
 			{
 				id: 'db7b7393-e142-4727-bd22-1ef307244de9',
 				itemName: 'Electrical Car hire with driver',
-				itemImage: 'https://res.cloudinary.com/dfsai53mw/image/upload/v1701285587/13444_ymwz9s.avif',
+				itemImage: 'https://res.cloudinary.com/dfsai53mw1/image/upload/v1701285587/13444_ymwz9s.avif',
 				itemImage2: '',
 				category: 'carhiredriver',
 				itemOwnerId: 'db7b7393-e138-4727-bd22-1ef307244de9',
@@ -83,7 +83,7 @@ export const up = (queryInterface, Sequelize) =>
 			{
 				id: 'db7b7393-e144-4727-bd22-1ef307244de9',
 				itemName: 'Avensis Car Model 39290',
-				itemImage: 'https://res.cloudinary.com/dfsai53mw/image/upload/v1701284532/avensis_fzi2ad.jpg',
+				itemImage: 'https://res.cloudinary.com/dfsai53mw1/image/upload/v1701284532/avensis_fzi2ad.jpg',
 				itemImage2: '',
 				category: 'selfdriving',
 				itemOwnerId: 'db7b7393-e138-4727-bd22-1ef307244de9',
@@ -96,7 +96,7 @@ export const up = (queryInterface, Sequelize) =>
 			{
 				id: 'db7b7393-e146-4727-bd22-1ef307244de9',
 				itemName: 'New car Version model 9032923',
-				itemImage: 'https://res.cloudinary.com/dfsai53mw/image/upload/v1701285587/12334_hlhpti.avif',
+				itemImage: 'https://res.cloudinary.com/dfsai53mw1/image/upload/v1701285587/12334_hlhpti.avif',
 				itemImage2: '',
 				category: 'selfdriving',
 				itemOwnerId: 'db7b7393-e138-4727-bd22-1ef307244de9',
@@ -109,7 +109,7 @@ export const up = (queryInterface, Sequelize) =>
 			{
 				id: 'db7b7393-e148-4727-bd22-1ef307244de9',
 				itemName: 'Car for car guy from 10*10 to 80*80',
-				itemImage: 'https://res.cloudinary.com/dfsai53mw/image/upload/v1701284532/avensis_fzi2ad.jpg',
+				itemImage: 'https://res.cloudinary.com/dfsai53mw1/image/upload/v1701284532/avensis_fzi2ad.jpg',
 				itemImage2: '',
 				category: 'selfdriving',
 				itemOwnerId: 'db7b7393-e138-4727-bd22-1ef307244de9',
@@ -122,7 +122,7 @@ export const up = (queryInterface, Sequelize) =>
 			{
 				id: 'db7b7393-e150-4727-bd22-1ef307244de9',
 				itemName: 'Car with Zero KM Self driving',
-				itemImage: 'https://res.cloudinary.com/dfsai53mw/image/upload/v1701285587/13444_ymwz9s.avif',
+				itemImage: 'https://res.cloudinary.com/dfsai53mw1/image/upload/v1701285587/13444_ymwz9s.avif',
 				itemImage2: '',
 				category: 'selfdriving',
 				itemOwnerId: 'db7b7393-e138-4727-bd22-1ef307244de9',
@@ -135,7 +135,7 @@ export const up = (queryInterface, Sequelize) =>
 			{
 				id: 'db7b7393-e152-4727-bd22-1ef307244de9',
 				itemName: 'Car self driving without driver',
-				itemImage: 'https://res.cloudinary.com/dfsai53mw/image/upload/v1701284532/avensis_fzi2ad.jpg',
+				itemImage: 'https://res.cloudinary.com/dfsai53mw1/image/upload/v1701284532/avensis_fzi2ad.jpg',
 				itemImage2: '',
 				category: 'selfdriving',
 				itemOwnerId: 'db7b7393-e138-4727-bd22-1ef307244de9',
@@ -148,7 +148,7 @@ export const up = (queryInterface, Sequelize) =>
 			{
 				id: 'db7b7393-e154-4727-bd22-1ef307244de9',
 				itemName: 'New Car Fast running with speed',
-				itemImage: 'https://res.cloudinary.com/dfsai53mw/image/upload/v1701284847/rav-new_twu4h5.avif',
+				itemImage: 'https://res.cloudinary.com/dfsai53mw1/image/upload/v1701284847/rav-new_twu4h5.avif',
 				itemImage2: '',
 				category: 'selfdriving',
 				itemOwnerId: 'db7b7393-e138-4727-bd22-1ef307244de9',
@@ -161,7 +161,7 @@ export const up = (queryInterface, Sequelize) =>
 			{
 				id: 'db7b7393-e156-4727-bd22-1ef307244de9',
 				itemName: 'New Car version model 1891 ',
-				itemImage: 'https://res.cloudinary.com/dfsai53mw/image/upload/v1701284847/rav-new_twu4h5.avif',
+				itemImage: 'https://res.cloudinary.com/dfsai53mw1/image/upload/v1701284847/rav-new_twu4h5.avif',
 				itemImage2: '',
 				category: 'carhire',
 				itemOwnerId: 'db7b7393-e138-4727-bd22-1ef307244de9',
