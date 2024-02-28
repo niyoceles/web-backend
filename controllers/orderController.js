@@ -28,7 +28,8 @@ class orderController {
       phoneNumber,
       address,
       location,
-      appUrl
+      appUrl,
+      itemType
     } = req.body;
 
     console.log('daaaaa', req.body);
@@ -52,6 +53,7 @@ class orderController {
         itemsArray,
         needDate,
         deadline,
+        itemType,
         amount,
       });
 

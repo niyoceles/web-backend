@@ -40,6 +40,10 @@ module.exports = {
       type: Sequelize.STRING,
       allowNull: true,
     },
+    itemType: {
+      type: Sequelize.STRING,
+      allowNull: true,
+    },
     status: {
       type: Sequelize.ENUM,
       allowNull: false,
