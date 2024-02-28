@@ -26,7 +26,6 @@ class itemController {
       const findUser = await User.findOne({
         where: {
           email: req.user.email,
-          userType: 'supplier',
         },
       });
 
