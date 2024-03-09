@@ -3,10 +3,10 @@ import SequelizeSlugify from 'sequelize-slugify';
 export default (sequelize, DataTypes) => {
   const Event = sequelize.define('Event', {
     id: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.UUID,
+      defaultValue: DataTypes.UUIDV4,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true,
     },
     userId: {
       type: DataTypes.UUID,
