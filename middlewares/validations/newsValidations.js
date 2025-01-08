@@ -15,7 +15,7 @@ class NewsValidation {
     const newsSchema = Joi.object().keys({
       title: Joi.string().required().label('Title'),
       newsBody: Joi.string().required().label('News body'),
-      image: Joi.string().required().label('Image'),
+      images: Joi.array().items(Joi.string().required()).label('Images'),
     });
 
     const news = {
@@ -24,7 +24,7 @@ class NewsValidation {
      */
       title: req.body.title,
       newsBody: req.body.newsBody,
-      image: req.body.image,
+      images: req.body.images,
     };
 
     const checkNews = Joi.validate(news, newsSchema, {

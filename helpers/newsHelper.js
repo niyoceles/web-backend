@@ -27,14 +27,14 @@ class NewsHelper {
 	 */
   static async createNews(body, authorId) {
     const {
-      title, newsBody, image
+      title, newsBody, images
     } = body;
 
     const news = {
       title,
       newsBody,
       authorId,
-      image,
+      images,
     };
 
     const addedNews = await News.create(news);
