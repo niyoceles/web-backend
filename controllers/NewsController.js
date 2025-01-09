@@ -197,6 +197,7 @@ export default class NewsController {
         dataValues,
       });
     } catch (error) {
+      console.log("error+++", error)
       return res.status(HTTP_SERVER_ERROR).json({
         error: SERVER_NOT_RESPONDING,
       });
@@ -213,7 +214,7 @@ export default class NewsController {
   static async update(req, res) {
     try {
       const {
-        title, newsBody, authorId, image
+        title, newsBody, authorId, images
       } = req.body;
 
       const findNews = await News.findOne({
@@ -233,7 +234,7 @@ export default class NewsController {
           title,
           newsBody,
           authorId,
-          image,
+          images,
         },
         {
           where: {

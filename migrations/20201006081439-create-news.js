@@ -26,9 +26,10 @@ const newsMigration = {
         key: 'id'
       }
     },
-    image: {
-      type: Sequelize.STRING,
-      allowNull: true
+    images: {
+      type: Sequelize.ARRAY(Sequelize.STRING),
+      allowNull: true,
+      defaultValue: []
     },
     isPublished: {
       allowNull: false,

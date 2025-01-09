@@ -30,9 +30,9 @@ export default (sequelize, DataTypes) => {
           key: 'id',
         },
       },
-      image: {
-        type: DataTypes.STRING,
-        allowNull: true,
+      images: {
+      type: DataTypes.ARRAY(DataTypes.STRING),
+      allowNull: true,
       },
       isPublished: {
         allowNull: false,
